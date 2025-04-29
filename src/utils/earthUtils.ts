@@ -6,24 +6,9 @@ import html2canvas from 'html2canvas';
 // Data for the Earth visualization
 const earthData = [
   {
-    name: '泰安',
-    N: 36.200001,
-    E: 117.086998,
-  },
-  {
     name: '北京',
     N: 39.904211,
     E: 116.407395,
-  },
-  {
-    name: '深圳',
-    N: 22.543096,
-    E: 114.057865,
-  },
-  {
-    name: '曼谷',
-    N: 13.756331,
-    E: 100.501762,
   }
 ];
 

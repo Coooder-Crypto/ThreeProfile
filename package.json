@@ -18,16 +18,21 @@
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@types/three": "^0.176.0",
+    "framer-motion": "^12.9.2",
     "gsap": "^3.12.7",
     "html2canvas": "^1.4.1",
     "next": "^15.3.1",
+    "prop-types": "^15.8.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-parallax-tilt": "^1.7.293",
+    "react-vertical-timeline-component": "^3.5.3",
     "three": "^0.176.0",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.4",
+    "@types/react-vertical-timeline-component": "^3.3.6",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.4"
