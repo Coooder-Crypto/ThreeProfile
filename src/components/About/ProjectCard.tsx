@@ -1,9 +1,7 @@
 import { TProject } from "@/types";
-import {
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-
+import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css';
+import ProjectLink from "./ProjectLink";
 
 const ProjectCard: React.FC<TProject> = (project) => {
   return (
@@ -14,28 +12,28 @@ const ProjectCard: React.FC<TProject> = (project) => {
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={project.date}
-      iconStyle={{ background: project.img }}
+      iconStyle={{
+        background: "linear-gradient(135deg, #915EFF 0%, #1d8cf8 100%)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
       icon={
-        <div className="flex h-full w-full items-center justify-center">
-          <img
-            src={project.img}
-            alt={project.name}
-            className="h-[60%] w-[60%] object-contain"
-          />
-        </div>
+        <div className="h-5 w-5 rounded-full bg-white" />
       }
     >
-      <div className="flex flex-row">
-        <div>
+      <div className="flex flex-col md:flex-row xl:flex-col">
+        <div className="flex-1">
           <div>
             <h3 className="text-[24px] font-bold text-white">
-              {project.title}
+             
+              {project.name}
             </h3>
             <p
               className="text-secondary text-[16px] font-semibold"
               style={{ margin: 0 }}
             >
-              {project.name}
+               {project.title}
             </p>
           </div>
 
@@ -49,8 +47,16 @@ const ProjectCard: React.FC<TProject> = (project) => {
               </li>
             ))}
           </ul>
+          <ProjectLink url={project.url} />
         </div>
-        <div className="w-[50%]">{project.img}</div>
+        
+        <div className="mt-2 md:mt-0 md:ml-6 xl:mt-6 xl:ml-0 flex justify-center">
+          <img 
+            src={project.img} 
+            alt={project.name}
+            className="w-full md:w-[200px] xl:w-full max-w-[500px] h-auto object-contain rounded-lg"
+          />
+        </div>
       </div>
     </VerticalTimelineElement>
   );

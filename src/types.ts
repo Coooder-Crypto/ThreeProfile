@@ -9,6 +9,7 @@ export type TProject = {
   points: string[];
   date: string;
   img: string;
+  url: string;
 }
 
 

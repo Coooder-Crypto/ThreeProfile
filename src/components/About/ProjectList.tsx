@@ -11,10 +11,9 @@ const ProjectList = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className={`sm:px-16 px-6 relative z-0 mx-auto max-w-7xl`}
+        className='sm:px-16 px-6 relative z-0 mx-auto max-w-7xl'
       >
-        <span className="hash-span">&nbsp;</span>
-        <div className="mt-20 flex flex-col">
+        <div className="flex flex-col p-4">
           <VerticalTimeline>
             {MyProjects.map((project, index) => (
               <ProjectCard key={index} {...project} />
