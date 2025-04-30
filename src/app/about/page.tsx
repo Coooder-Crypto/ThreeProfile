@@ -12,7 +12,7 @@ export default function About() {
   };
 
   return (
-    <main className="min-h-screen bg-[#050816] text-white pt-16 pb-20">
+    <main className="min-h-screen bg-[#050816] text-white pt-16 pb-20 mt-[60px]">
       {isLoading && <Loading onLoadingComplete={handleLoadingComplete} />}
       
       {/* Hero Section */}

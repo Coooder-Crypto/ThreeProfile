@@ -5,13 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        'home-bg': '#010826',
-        'about-bg': '#0a2342',
-        'skills-bg': '#0f3460',
-        'contact-bg': '#1a1a2e',
-        'accent': '#0cd1eb',
-      },
       animation: {
         'pulse': 'pulse 2s infinite',
         'bounce': 'bounce 2s infinite',
