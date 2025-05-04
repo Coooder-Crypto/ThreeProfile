@@ -48,10 +48,10 @@ export const MyProjects = [
         url: 'https://www.circuit.money/'
     },
     {
-        name: '木棉资本官网',
+        name: '穆棉资本官网',
         title: '前端开发',
         points: [
-            '木棉资本官网包含了公司相关信息和合作信息',
+            '穆棉资本官网包含了公司相关信息和合作信息',
             '主要技术栈： Vue',
             '作为前端开发，高质量完成了设计的复现'
         ],

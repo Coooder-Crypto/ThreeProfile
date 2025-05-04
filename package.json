@@ -29,6 +29,7 @@
     "react-parallax-tilt": "^1.7.293",
     "react-vertical-timeline-component": "^3.5.3",
     "three": "^0.176.0",
+    "troika-three-text": "^0.52.4",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
