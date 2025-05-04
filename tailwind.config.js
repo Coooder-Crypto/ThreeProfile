@@ -17,7 +17,6 @@ module.exports = {
         'pulse': 'pulse 2s infinite',
         'bounce': 'bounce 2s infinite',
         'fadeInUp': 'fadeInUp 0.8s ease forwards',
-        'zoomOut': 'zoomOut 0.5s linear forwards',
       },
       keyframes: {
         pulse: {
@@ -38,14 +37,6 @@ module.exports = {
             opacity: '1',
             transform: 'translateY(0)'
           },
-        },
-        zoomOut: {
-          '0%': { opacity: '1' },
-          '50%': { 
-            opacity: '0',
-            transform: 'scale3d(1.3, 1.3, 1.3)'
-          },
-          'to': { opacity: '0' },
         },
       },
       boxShadow: {

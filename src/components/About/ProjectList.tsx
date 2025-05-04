@@ -8,10 +8,11 @@ const ProjectList = () => {
   return (
     <>
       <motion.section
+        id="project-list"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className='sm:px-16 px-6 relative z-0 mx-auto max-w-7xl'
+        className='px-6 relative z-0 mx-auto max-w-7xl'
       >
         <div className="flex flex-col p-4">
           <VerticalTimeline>

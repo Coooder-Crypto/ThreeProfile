@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { createPointCloudVisualization } from "@/utils/pointCloudUtils";
+import ProjectLink from "./ProjectLink";
 
 const AvatarCard: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -90,13 +91,16 @@ const AvatarCard: React.FC = () => {
   }, []);
 
   return (
-    <div
-      ref={containerRef}
-      className="w-[350px] h-[350px] rounded-xl overflow-hidden bg-transparent"
-      style={{
-        boxShadow: "0 10px 30px -10px rgba(145, 94, 255, 0.5)",
-      }}
-    />
+    <div className="flex flex-col w-[350px] h-[350px] items-center">
+      <div
+        ref={containerRef}
+        className="w-[350px] h-[350px] rounded-xl overflow-hidden bg-transparent"
+        style={{
+          boxShadow: "0 10px 30px -10px rgba(145, 94, 255, 0.5)",
+        }}
+      />
+      <ProjectLink url="https://github.com/Coooder-Crypto"/>
+    </div>
   );
 };
 

@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Loading from '@/components/Layout/Loading';
-import ProjectList from '@/components/About/ProjectList';
-import Profile from '@/components/About/Profile';
+import React, { useState } from "react";
+import Loading from "@/components/Layout/Loading";
+import ProjectList from "@/components/About/ProjectList";
+import Profile from "@/components/About/Profile";
 
 export default function About() {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,12 +13,12 @@ export default function About() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050816] text-white pb-20 mt-[60px]">
+    <div className="bg-[#050816] text-white mt-[60px]">
       {isLoading && <Loading onLoadingComplete={handleLoadingComplete} />}
-      
+
       <Profile />
-      
-     <ProjectList />
+
+      <ProjectList />
     </div>
   );
 }

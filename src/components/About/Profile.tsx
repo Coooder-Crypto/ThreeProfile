@@ -19,31 +19,59 @@ const Profile = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <div
-      className="bg-hero-pattern flex h-screen bg-cover bg-center bg-no-repeat"
+      className="flex border-b relative"
       style={{
         flexDirection: windowWidth >= 768 ? "row" : "column",
         justifyContent: windowWidth >= 768 ? "center" : "",
         alignItems: windowWidth >= 768 ? "" : "center",
         paddingTop: windowWidth >= 768 ? "80px" : "40px",
+        minHeight: windowWidth >= 768 ? "calc(100vh - 100px)" : "auto",
+        paddingBottom: windowWidth < 768 ? "40px" : "0",
       }}
     >
       <AvatarCard />
       <div
+        className="text-center flex flex-col items-center p-0"
         style={{
-          textAlign: "center",
           marginLeft: windowWidth >= 768 ? "40px" : "",
+          maxWidth: windowWidth >= 768 ? "500px" : windowWidth >= 480 ? "450px" : "90%",
+          padding: windowWidth < 480 ? "0 15px" : "0",
         }}
       >
         <div className="w-full">
-          <Text3D
-            text="Hi, I'm Coooder"
-          />
+          <Text3D text="Hi, I'm Coooder 👋" />
         </div>
-        <p className="text-[#dfd9ff] max-w-[400px] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-4 max-w-2xl mx-auto break-words">
-          Frontend Developer Frontend Developer Frontend Developer Frontend Developer Frontend Developer Frontend Developer Frontend Developer Frontend Developer Frontend Developer Frontend Developer Frontend Developer Frontend Developer Frontend Developer Frontend Developer
-        </p>
+        <div 
+          className="text-[#dfd9ff] font-medium break-words"
+          style={{
+            fontSize: windowWidth >= 480 ? "16px" : "15px",
+            lineHeight: windowWidth >= 480 ? "1.6" : "1.5",
+          }}
+        >
+          <p className="mb-2">
+            🎓 嗨！我是张岩，北邮研一在读~ 曾参与多个校内项目、企业实习与 Web3
+            开发。
+          </p>
+
+          <p className="mb-2">
+            🛠️ React + Next.js + Tailwind CSS ❤️
+            热爱前端世界，不断探索技术新知。
+          </p>
+
+          <p className="mb-2">
+            🌐 近两年深度参与多个 Web3 远程项目开发。🔋
+            自驱力强，解决问题能力突出，能高效完成各类开发任务。
+          </p>
+
+          <p>
+            ✨
+            期待一份能够提供更多成长空间的前端实习机会，希望在专业团队中汲取经验，获得更多技术指导与反馈
+            (●'◡'●)
+          </p>
+        </div>
       </div>
     </div>
   );
